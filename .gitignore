@@ -1,16 +1,3 @@
 /.idea/
 IdeaProjects.iml
-
-/out/production/IdeaProjects/CustomScanner.class
-/out/production/IdeaProjects/InkrementacjaDekrementacja.class
-/out/production/IdeaProjects/OperatoryMatematyczne.class
-/out/production/IdeaProjects/TypyObiektowe.class
-/out/production/IdeaProjects/TypyProste.class
-/out/production/IdeaProjects/Zmienne.class
-/out/production/IdeaProjects/Calculator.class
-/out/production/IdeaProjects/OperatoryPorownania.class
-/out/production/IdeaProjects/OpratoryLogiczne.class
-/out/production/IdeaProjects/InstrukcjaWarunkowaIf.class
-/out/production/IdeaProjects/InstrukcjaWarunkowaIfElse.class
-/out/production/IdeaProjects/InstrukcjaWarunkowaElseIf.class
-/out/production/IdeaProjects/AgeChecker.class
+/out/
