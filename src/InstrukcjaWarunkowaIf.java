@@ -1,4 +1,3 @@
-// Instrukcja warunkowa IF
 public class InstrukcjaWarunkowaIf {
     public static void main(String[] args) {
         float dzielna = 4.0F;
