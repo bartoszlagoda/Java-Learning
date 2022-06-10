@@ -8,6 +8,14 @@ public class Auto {
     public Integer rokProdukcji;
     public Integer przebieg;
 
+    public Auto(String wlasciciel, String marka, String model, Integer rokProdukcji, Integer przebieg){
+        this.wlasciciel = wlasciciel;
+        this.marka = marka;
+        this.model = model;
+        this.rokProdukcji = rokProdukcji;
+        this.przebieg = przebieg;
+    }
+
     public void jedz(){
         System.out.println("Jade!");
     }
