@@ -1,10 +1,10 @@
-public class While {
+public class DoWhile {
     public static void main(String[] args) {
-        // Wartość tej zmiennej powinna spowodować niewykonanie się pętli
         int number = 21; // zmienna referencyjna
-        while (number < 20){
+        do {
             System.out.println("Moja wartość to: " + number + " i jestem mniejszy od 20");
-            number++; // inkrementacja wartości po wykonaniu instrukcji
+            number++;
         }
+        while(number < 20);
     }
 }
