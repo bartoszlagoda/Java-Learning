@@ -1,3 +1,5 @@
+package CalculatorFile;
+
 import java.util.Scanner;
 
 public class Calculator {
@@ -9,6 +11,29 @@ public class Calculator {
         float firstNumber = scanner.nextFloat();
         System.out.println("Podaj drugą liczbę:");
         float secondNumber = scanner.nextFloat();
+        System.out.println("Wybierz sposób przeliczenia:\n1. na funkcjach\n2. na metodach");
+        int choose = scanner.nextInt();
+
+        switch (choose){
+            case 1:
+                firstCalculator(firstNumber,secondNumber);
+                break;
+            case 2:
+                CalculatorMethods calculate = new CalculatorMethods();
+                calculate.add(firstNumber,secondNumber);
+                calculate.sub(firstNumber,secondNumber);
+                calculate.div(firstNumber,secondNumber);
+                calculate.mul(firstNumber,secondNumber);
+                calculate.mod(firstNumber,secondNumber);
+                break;
+            default:
+                System.out.println("Wprowadzono niepoprawną wartość.");
+        }
+
+    }
+    public static void firstCalculator(float firstNumber, float secondNumber){
+
+
         System.out.println("Oto wyniki działań:\n");
         System.out.println("Wynikiem dodawania powyższych liczb jest : " + (firstNumber + secondNumber));
         System.out.println("Wynikiem odejmowania powyższych liczb jest : " + (firstNumber - secondNumber));
