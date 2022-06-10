@@ -1,3 +1,5 @@
+package AutoFile;
+
 public class Auto {
 
     public String wlasciciel;

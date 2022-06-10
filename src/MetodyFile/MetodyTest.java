@@ -1,3 +1,7 @@
+package MetodyFile;
+
+import MetodyFile.Metody;
+
 public class MetodyTest {
     public static void main(String[] args) {
         Metody metody = new Metody();

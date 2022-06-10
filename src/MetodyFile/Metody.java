@@ -1,3 +1,5 @@
+package MetodyFile;
+
 public class Metody {
     public void policzWynik(){
         System.out.println("Zaraz policzę wynik");
