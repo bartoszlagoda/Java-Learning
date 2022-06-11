@@ -13,15 +13,22 @@ public class AutoTest {
         mercedes.info();
 
         // stworzenie nowego obiektu klasy AutoFile.Auto
-        Auto audi = new Auto("Krzysztof Kowalski", "Audi", "A5", 2020, 0);
         // przypisanie wartości do obiektu klasy AutoFile.Auto
-        audi.marka = "Audi";
-        audi.model = "A5";
-        audi.rokProdukcji = 2020;
-        audi.przebieg = 0;
+        Auto audi = new Auto("Krzysztof Kowalski", "Audi", "A5", 2020, 0);
+
         // wywołanie metod klasy AutoFile.Auto dla obiektu audi
         audi.jedz();
         audi.hamuj();
         audi.info();
+
+        Auto citroen = new Auto();
+
+        citroen.wlasciciel = "Kamil Piotrowski";
+        citroen.marka = "Citroen";
+        citroen.model = "C2";
+        citroen.rokProdukcji = 2010;
+        citroen.przebieg = 65400;
+
+        citroen.info();
     }
 }

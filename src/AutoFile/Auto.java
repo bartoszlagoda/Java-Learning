@@ -8,6 +8,10 @@ public class Auto {
     public Integer rokProdukcji;
     public Integer przebieg;
 
+    public Auto(){
+
+    }
+
     public Auto(String wlasciciel, String marka, String model, Integer rokProdukcji, Integer przebieg){
         this.wlasciciel = wlasciciel;
         this.marka = marka;
@@ -25,6 +29,7 @@ public class Auto {
     }
 
     public void info(){
+        System.out.println("Witaj " + wlasciciel);
         System.out.println("Marka: " + marka);
         System.out.println("Model: " + model);
         System.out.println("Rok produkcji: " + rokProdukcji);
