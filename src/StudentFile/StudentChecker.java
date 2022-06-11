@@ -1,11 +1,21 @@
+package StudentFile;
+
+import StudentFile.Student;
+
 public class StudentChecker {
     public static void main(String[] args) {
+
+        String uczelnia = Student.nazwaUczelni; // wywołanie pola statycznego dla dla całej klasy Student
+        Student.infoUczelni(); // wywołanie metody statycznej dla całej klasy Student
+
         Student azarzycki = new Student();
         azarzycki.imie = "Antoni";
         azarzycki.nazwisko = "Zarzycki";
         azarzycki.nick = "azarzyc06";
         azarzycki.numerIndeksu = 606123;
         azarzycki.email = "azarzycki@gmail.com";
+        String uczelniaAntoniego = azarzycki.nazwaUczelni; // wywołanie pola statycznego dla obiektu
+        //azarzycki.infoUczelni(); // wywołanie metody statycznej dla obiektu azarzycki
 
         Student btomaszewska = new Student();
         btomaszewska.imie = "Barbara";

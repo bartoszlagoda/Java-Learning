@@ -1,3 +1,5 @@
+package StudentFile;
+
 public class Student {
 
     public String imie;
@@ -5,6 +7,7 @@ public class Student {
     public String nick;
     public String email;
     public int numerIndeksu;
+    public static String nazwaUczelni = "PWR";
 
     public void przedstawSie(){
         System.out.println("Nazywam się " + imie + " " + nazwisko);
@@ -20,6 +23,15 @@ public class Student {
 
     public void podajEmail(){
         System.out.println("Moj adres email to : " + email);
+    }
+
+    public static void infoUczelni(){
+        System.out.println("Moja uczelnia to " + nazwaUczelni);
+        druga();
+    }
+
+    public static void druga(){
+        System.out.println("Jestem drugą metodą");
     }
 
 }
