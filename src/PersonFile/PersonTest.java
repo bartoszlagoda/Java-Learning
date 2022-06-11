@@ -6,8 +6,8 @@ public class PersonTest {
         //teacher.name = "Tom";
         //teacher.age = 29;
         //teacher.school = "University";
-        teacher.sayHello();
-        teacher.teachMath();
+        /*teacher.sayHello();
+        teacher.teachMath();*/
         teacher.walk();
         teacher.eat();
 
@@ -15,8 +15,8 @@ public class PersonTest {
         //footballer.name = "Mike";
         //footballer.age = 21;
         //footballer.fotballClub = "Boca Juniors";
-        footballer.playFootball();
-        footballer.walk();
+        //footballer.playFootball();
+        //footballer.walk();
         footballer.eat();
     }
 
