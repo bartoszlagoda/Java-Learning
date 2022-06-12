@@ -12,6 +12,7 @@ public class MathTeacher extends Person {
         this.school = school;
     }
     public void walk(){
+        super.walk(); // wywołanie metody walk z klasy nadrzędnej
         System.out.println("I walk very fast!");
     }
 
