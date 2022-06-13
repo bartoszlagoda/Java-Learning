@@ -2,8 +2,8 @@ package Webdriver;
 
 public class WebDriverChecker {
     public static void main(String[] args)  {
-        WebDriver chromeDriver = getDriver("chrome");
-        WebDriver firefoxDriver = getDriver("firefoxa");
+        WebDriver chromeDriver = getDriver(DriverType.CHROME);
+        WebDriver firefoxDriver = getDriver(DriverType.FIREFOX);
 
         System.out.println(firefoxDriver.get("Mozilla Firefox"));
         System.out.println(firefoxDriver.findElementBy("NAME", "BUTTON_1"));
@@ -12,17 +12,10 @@ public class WebDriverChecker {
         System.out.println(chromeDriver.findElementBy("XPATH", "//@class['browser']"));
     }
 
-    private static WebDriver getDriver(String browser) {
-        if (browser.equals("chrome")) {
+    private static WebDriver getDriver(DriverType type) {
+        if (type == DriverType.CHROME) {
             return new ChromeDriver();
-        } else if (browser.equals("firefox")) {
-            return new FirefoxDriver();
         }
-        try {
-            throw new NoValidBrowserName("No valid browser name.");
-        } catch (NoValidBrowserName noValidBrowserName) {
-            noValidBrowserName.printStackTrace();
-        }
-        return null;
+        return new FirefoxDriver();
     }
 }
