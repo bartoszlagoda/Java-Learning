@@ -1,5 +1,5 @@
-import Webdriver.FirefoxDriver;
-import Webdriver.WebDriver;
+import drivers.FirefoxDriver;
+import drivers.WebDriver;
 
 public class ConversionCasting {
     public static void main(String[] args) {
@@ -14,6 +14,6 @@ public class ConversionCasting {
 
         WebDriver driver = new FirefoxDriver();
         FirefoxDriver firefoxDriver = (FirefoxDriver) driver; // konwersja na typ Firefox
-        System.out.println(firefoxDriver.get("Mozilla Firefox"));
+        System.out.println(firefoxDriver.get());
     }
 }

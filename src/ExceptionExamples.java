@@ -1,6 +1,6 @@
-import Webdriver.ChromeDriver;
-import Webdriver.FirefoxDriver;
-import Webdriver.WebDriver;
+import drivers.ChromeDriver;
+import drivers.FirefoxDriver;
+import drivers.WebDriver;
 
 public class ExceptionExamples {
     public static void main(String[] args) {
@@ -15,10 +15,10 @@ public class ExceptionExamples {
         WebDriver chromeDriver = getDriver("chrome");
         WebDriver firefoxDriver = getDriver("firefoxa");
 
-        System.out.println(firefoxDriver.get("Mozilla Firefox"));
+        System.out.println(firefoxDriver.get());
         System.out.println(firefoxDriver.findElementBy("NAME", "BUTTON_1"));
 
-        System.out.println(chromeDriver.get("Google Chrome"));
+        System.out.println(chromeDriver.get());
         System.out.println(chromeDriver.findElementBy("XPATH", "//@class['browser']"));
 
     }

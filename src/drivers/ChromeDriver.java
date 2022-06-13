@@ -1,9 +1,9 @@
-package Webdriver;
+package drivers;
 
 public class ChromeDriver implements WebDriver{
     @Override
-    public String get(String browser) {
-        return "Otwieram przeglądarkę " + browser;
+    public String get() {
+        return "Otwieram przeglądarkę za pomocą przeglądarki Google Chrome";
     }
 
     @Override

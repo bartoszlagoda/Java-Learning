@@ -1,9 +1,9 @@
-package Webdriver;
+package drivers;
 
 public class FirefoxDriver implements WebDriver{
     @Override
-    public String get(String browser) {
-        return "Otwieram przeglądarkę " + browser;
+    public String get() {
+        return "Otwieram przeglądarkę za pomocą przeglądarki Mozilla Firefox";
     }
 
     @Override

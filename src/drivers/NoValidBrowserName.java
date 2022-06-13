@@ -1,4 +1,4 @@
-package Webdriver;
+package drivers;
 
 public class NoValidBrowserName extends Exception {
     public NoValidBrowserName(String message){

@@ -1,6 +1,6 @@
-package Webdriver;
+package drivers;
 
 public interface WebDriver {
-    String get(String browser); // "Otwieram przeglądarkę za pomocą Firefoxa/Google Chrome'a."
+    String get(); // "Otwieram przeglądarkę za pomocą Firefoxa/Google Chrome'a."
     String findElementBy(String method, String data); // "Wyszukuję [data] metodą [method]."
 }
